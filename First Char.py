@@ -3,7 +3,7 @@
 # word_list = ["ardvark","baboon","camel"]
 
 # TODO- 1 - Randomly choose a word_list
-#  and assign it  to a variable  called chosem_word
+#  and assign it  to a variable  called chosen_word
 
 # TODO- 2 - Ask the user to gues a letter and assign their answer
 #  to a variable called guess.Make guess lowercase 
