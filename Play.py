@@ -132,3 +132,46 @@ random_names =random.randint(0,num_items - 1)
 person_who_will_pay =names[random_names]
 
 print(person_who_will_pay +"  is going to buy the meal today!")
+
+
+
+# #        Hurdle 4 before the maze
+# def turn_right():
+#    turn_left()
+#    turn_left()
+#    turn_left()
+
+# def jump():
+#     turn_left()
+#     while wall_on_right():
+#         move()
+#     turn_right()
+#     move()
+#     turn_right()
+#     while front_is_clear():
+#         move()
+#     turn_left()
+       
+# while  not at_goal():
+#     if wall_in_front(): 
+#         jump()   
+#     else:
+#         move()
+
+
+# maze char
+
+#  def turn_right():
+#    turn_left()
+#    turn_left()
+#    turn_left()
+
+# while not at_goal():
+#     if right_is_clear() :
+#         turn_right()
+#         move()
+#     elif front_is_clear():
+#         move()
+#     else:
+#         turn_left()
+        
