@@ -11,8 +11,12 @@ word_length =(len(chosen_word))
 print(f"Psst,the solution is {chosen_word}")
 
 
-Create blanks
+# Create blanks
 display =[]
-word_length =(len(chosen_word))   #length of the word from 0 t0 6 if the chosen word is baboon
 for _ in range(word_length):
     display += "_"
+
+# TODO 1 - Use a while loop to let the user guess again,the loop should only
+# stop once the user has guessed all the letters in the chosen_word and
+#  'display' has no more blanks ("_").then yiu can tell the user they hv won
+
