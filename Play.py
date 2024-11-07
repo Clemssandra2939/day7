@@ -280,3 +280,48 @@ if height >= 120:
 
 else:   
     print("Sorry,u have to grow taller before u can ride.")
+
+
+
+    # Adding even  number from 1 to 100 including 1 and 100
+
+total_numbr = 0
+for numbr in range (2, 101,2):
+    total_numbr += numbr
+print(total_numbr)
+
+
+total_number = 0
+for number in range (1,101):
+    if number % 2==0:
+        total_number += number
+print(total_number)
+
+
+# Average Height Exercise coding char
+student_heights = input("input a list of student heights ").split(",")
+for n in range(0, len(student_heights)):
+    student_heights[n] = int(student_heights[n])
+print(student_heights)
+
+total_height=0
+for height in student_heights:
+    total_height += height
+print(total_height)
+# 156,178,165,171,187
+
+number_of_students = 0
+for student in student_heights:
+    number_of_students += 1
+print(number_of_students)
+
+average = round(total_height/number_of_students)
+print(average)
+
+
+# tot_jump = 1
+
+# for j in range(tot_jump,7):
+#     jump()
+    
+# print(tot_jump)

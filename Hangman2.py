@@ -12,10 +12,19 @@ print(f"Psst,the solution is {chosen_word}")
 # For each letter in the chosen_word,add s "_" to 'display'.
 # So if the chosen_word was "apple",display should be 
 # ["_" "_" "_" "_" "_"] with 5 "_" representing each letter to guess
+# display =[]
+# for letter in chosen_word:
+#     display += "_"
+# print(display)
+
+
+# or
+
 display =[]
-for letter in chosen_word:
+word_length =(len(chosen_word))   #length of the word from 0 t0 6 if the chosen word is baboon
+for _ in range(word_length):
     display += "_"
-    print(display)
+print(display)
 
 guess =input("Guess a letter:").lower()
 
@@ -25,26 +34,19 @@ guess =input("Guess a letter:").lower()
 # e.g. if the user guessed "p" and the chosen_word was "apple",
 # then display should be ["_","p","p", "_", "_"].
 
-for position in range (len(chosen_word)):
+
+for position in range (word_length):
     letter = chosen_word[position]
     if letter == guess:
-        print("Right,in the blank!!")
-    else:
-        print("Wrong,Not in the blank!!")
+        display[position] = letter
 
+    
+    
 # TODO-3: -Print "display" and you should see the guessed letter in 
 # the correct potion and every other letter replace with "_"
 # Hint - Don't worry about getting the user to guess the next letter,
 # We will tackle that in step 3.
-
-# display = []
-
-
-# for position in range (len(chosen_word)):
-#     letter = chosen_word[position]
-#     if letter == guess:
-#         "_" =+ 
-#     else:
-#         print("Wrong,Not in the blank!!")
+print(display)
+# 
 
 
