@@ -12,6 +12,10 @@ print(f"Psst,the solution is {chosen_word}")
 # For each letter in the chosen_word,add s "_" to 'display'.
 # So if the chosen_word was "apple",display should be 
 # ["_" "_" "_" "_" "_"] with 5 "_" representing each letter to guess
+display =[]
+for letter in chosen_word:
+    display += "_"
+    print(display)
 
 guess =input("Guess a letter:").lower()
 
@@ -21,7 +25,8 @@ guess =input("Guess a letter:").lower()
 # e.g. if the user guessed "p" and the chosen_word was "apple",
 # then display should be ["_","p","p", "_", "_"].
 
-for letter in chosen_word:
+for position in range (len(chosen_word)):
+    letter = chosen_word[position]
     if letter == guess:
         print("Right,in the blank!!")
     else:
@@ -33,5 +38,13 @@ for letter in chosen_word:
 # We will tackle that in step 3.
 
 display = []
+
+
+for position in range (len(chosen_word)):
+    letter = chosen_word[position]
+    if letter == guess:
+        "_" =+ 
+    else:
+        print("Wrong,Not in the blank!!")
 
 
