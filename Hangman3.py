@@ -31,3 +31,8 @@ for position in range(word_length):
     letter: {guess}")
     if letter == guess:
         display[position] = letter
+
+
+
+# a = 3
+# if not a > 1:

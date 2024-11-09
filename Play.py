@@ -319,9 +319,44 @@ average = round(total_height/number_of_students)
 print(average)
 
 
-# tot_jump = 1
 
-# for j in range(tot_jump,7):
-#     jump()
+# def turn_right():
+#    turn_left()
+#    turn_left()
+#    turn_left()
+
+# def jump():
+#     move()
+#     turn_left()
+#     move()
+#     turn_right()
+#     move()
+#     turn_right()
+#     move()
+#     turn_left()
     
-# print(tot_jump)
+# number_of_hurdles = 6
+# while number_of_hurdles >0 :
+#     jump()
+#     number_of_hurdles -= 1
+#     print(number_of_hurdles)
+
+# How to use to while loops with conditions in the reebrog robot
+# def turn_right():
+#    turn_left()
+#    turn_left()
+#    turn_left()
+
+# def jump():
+#     move()
+#     turn_left()
+#     move()
+#     turn_right()
+#     move()
+#     turn_right()
+#     move()
+#     turn_left()
+    
+# while not at_goal():
+#     jump()
+   
