@@ -29,4 +29,4 @@ for position in range(word_length):
     print(f"Current postion:{position}\n 
     Current letter :{letter}\n Guessed 
     letter: {guess}")
-    if letter == 
+    if letter == guess:
