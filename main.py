@@ -7,7 +7,7 @@
 
 # # Flowchart Progamming for the hangman progarm
 
-# Start 
+# Start   
 
 # Generate a random word eg if the word is Mouse
 
