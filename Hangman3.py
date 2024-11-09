@@ -30,3 +30,4 @@ for position in range(word_length):
     Current letter :{letter}\n Guessed 
     letter: {guess}")
     if letter == guess:
+        display[position] = letter
