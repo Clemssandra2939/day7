@@ -18,21 +18,18 @@ for _ in range(word_length):
 
 # TODO 1 - Use a while loop to let the user guess again,the loop should only
 # stop once the user has guessed all the letters in the chosen_word and
-#  'display' has no more blanks ("_").then yiu can tell the user they hv won
+#  'display' has no more blanks ("_").then you can tell the user they hv won
 
 
 guess = input ("Guess a letter:").lower()
 
-# Chek guessed letter
+# Check guessed letter
 for position in range(word_length):
     letter = chosen_word [position]
-    print(f"Current postion:{position}\n 
-    Current letter :{letter}\n Guessed 
+    print(f"Current postion:{position}\n Current letter :{letter}\n Guessed 
     letter: {guess}")
     if letter == guess:
         display[position] = letter
 
 
-
-# a = 3
-# if not a > 1:
+while not 
