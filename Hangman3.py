@@ -20,16 +20,23 @@ for _ in range(word_length):
 # stop once the user has guessed all the letters in the chosen_word and
 #  'display' has no more blanks ("_").then you can tell the user they hv won
 
+# In help to check for element in a list 
+Game_Over = False
+while not Game_Over :
+    guess = input ("Guess a letter:").lower()
 
-guess = input ("Guess a letter:").lower()
+    # Check guessed letter
 
-# Check guessed letter
-for position in range(word_length):
-    letter = chosen_word [position]
-    print(f"Current postion:{position}\n Current letter :{letter}\n Guessed 
-    letter: {guess}")
-    if letter == guess:
-        display[position] = letter
+    for position in range(word_length):
+        letter = chosen_word [position]
+        print(f"Current postion:{position}\n Current letter :{letter}\n Guessed 
+        letter: {guess}")
+        if letter == guess:
+            display[position] = letter
 
+    print(display)
 
-while not 
+    if "_"  not in display:
+        Game_Over = True
+        print("You Win!!")
+
