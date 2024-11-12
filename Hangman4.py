@@ -96,3 +96,4 @@ while not Game_Over :
         # print(f"Current postion:{position}\n Current letter :{letter}\n Guessed letter: {guess}")
         if letter == guess:
             display[position] = letter
+
