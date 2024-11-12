@@ -97,3 +97,15 @@ while not Game_Over :
         if letter == guess:
             display[position] = letter
 
+# TODO- 2: - If guess is not a letter in the chosen_word.then reduce "lives" by 1.
+# if lives goes down to 0 then the gamw should stop and it should print "You lose"
+
+
+# Join all the element in the list and turn it into a String.
+print(f"{''.join(display)}")
+
+
+# Check if user has got all letters.
+if "_"  not in display:
+        Game_Over = True
+        print("You Win!!")
