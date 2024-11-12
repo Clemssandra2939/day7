@@ -83,3 +83,16 @@ print(f"Psst,the solution is {chosen_word}")
 display =[]
 for _ in range(word_length):
     display += "_"
+
+
+Game_Over = False
+while not Game_Over :
+    guess = input ("Guess a letter:").lower()
+
+    # Check guessed letter
+
+    for position in range(word_length):
+        letter = chosen_word [position]
+        # print(f"Current postion:{position}\n Current letter :{letter}\n Guessed letter: {guess}")
+        if letter == guess:
+            display[position] = letter
