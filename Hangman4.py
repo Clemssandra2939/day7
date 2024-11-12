@@ -109,3 +109,5 @@ print(f"{''.join(display)}")
 if "_"  not in display:
         Game_Over = True
         print("You Win!!")
+
+TODO -3- Print the ASCII art from 'stages'that corresponds to the current number of 'lives' the user has remaining
