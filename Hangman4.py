@@ -100,18 +100,18 @@ while not Game_Over :
 
 
 if guess not in chosen_word:
-     lives -= 1
-     if lives == 0:
-        Game_Over = True
-        print("You lose!!")
+    lives -= 1
+    if lives == 0:
+     Game_Over = True
+     print("You lose!!")
 # Join all the element in the list and turn it into a String.
 print(f"{''.join(display)}")
 
 
 # Check if user has got all letters.
 if "_"  not in display:
-        Game_Over = True
-        print("You Win!!")
+    Game_Over = True
+    print("You Win!!")
 
 # TODO -3- Print the ASCII art from 'stages'that corresponds to the current number of 'lives' the user has remaining 
 print(stages[lives])
