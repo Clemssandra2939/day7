@@ -17,8 +17,7 @@ stages = ['''
  |/    |
  |     0
  |    <|>
- |     |
- |    / !
+ |    / |
  |
 _|___''', '''
 
@@ -26,7 +25,6 @@ _|___''', '''
  |/    |
  |     0
  |    <|>
- |     |
  |    / 
  |
 _|___''', '''
@@ -35,7 +33,6 @@ _|___''', '''
  |/    |
  |     0
  |    <|>
- |     |
  |    
  |
 _|___''', '''
@@ -75,6 +72,7 @@ word_length =(len(chosen_word))
 
 # TODO-1: - Create a variable called 'lives' to keep track of the number of lives left.
 # Set 'lives' to equal 6
+lives = 6
 
 # Testing code
 print(f"Psst,the solution is {chosen_word}") 
@@ -101,6 +99,11 @@ while not Game_Over :
 # if lives goes down to 0 then the gamw should stop and it should print "You lose"
 
 
+if guess not in chosen_word:
+     lives -= 1
+     if lives == 0:
+        Game_Over = True
+        print("You lose!!")
 # Join all the element in the list and turn it into a String.
 print(f"{''.join(display)}")
 
@@ -110,4 +113,5 @@ if "_"  not in display:
         Game_Over = True
         print("You Win!!")
 
-TODO -3- Print the ASCII art from 'stages'that corresponds to the current number of 'lives' the user has remaining
+# TODO -3- Print the ASCII art from 'stages'that corresponds to the current number of 'lives' the user has remaining 
+print(stages[lives])
