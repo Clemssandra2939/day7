@@ -1,5 +1,5 @@
 # Step 4
-
+import random
 logo = """
  _                                             
 | |                                            
@@ -65,10 +65,10 @@ _|___''', '''
 _|___''']
 
 
-import random
+Game_Over = False
 word_list = ["ardvark","baboon","camel"]
 chosen_word =random.choice(word_list)
-word_length =(len(chosen_word))
+word_length =len(chosen_word)
 
 # TODO-1: - Create a variable called 'lives' to keep track of the number of lives left.
 # Set 'lives' to equal 6
@@ -83,7 +83,7 @@ for _ in range(word_length):
     display += "_"
 
 
-Game_Over = False
+
 while not Game_Over :
     guess = input ("Guess a letter:").lower()
 
@@ -96,7 +96,7 @@ while not Game_Over :
             display[position] = letter
 
 # TODO- 2: - If guess is not a letter in the chosen_word.then reduce "lives" by 1.
-# if lives goes down to 0 then the gamw should stop and it should print "You lose"
+# if lives goes down to 0 then the game should stop and it should print "You lose"
 
 
 if guess not in chosen_word:
@@ -104,8 +104,9 @@ if guess not in chosen_word:
     if lives == 0:
      Game_Over = True
      print("You lose!!")
+     
 # Join all the element in the list and turn it into a String.
-print(f"{''.join(display)}")
+print(f"{' '.join(display)}")
 
 
 # Check if user has got all letters.
