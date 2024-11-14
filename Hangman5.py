@@ -1,1 +1,4 @@
-Step 5
+# Step 5
+
+import random
+
