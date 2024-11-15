@@ -11,10 +11,27 @@ logo = """
                     __/ |                      
                    |___/                       
 """
-# TODO - 1 : - Update the word list to use
+# TODO - 1 : - Update the word list to use the 'word_list'from hangman_word.py
+# Delete this line:word_list = ["ardvark","baboon","camel"]
+chosen_word =random.choice(word_list)
+word_length =len(chosen_word)
 
-word_list = ["baboon", "camel",
-             "abandoned", "aberdeen",
+Game_Over = True
+lives = 6
+
+# TODO - 3 : - import the logo from hangmana- ar.py and print it at the start of the game.
+
+# Testing code
+print(f"Psst,the solution is {chosen_word}") 
+
+# Create blanks
+display =[]
+for _ in range(word_length):
+    display += "_"
+
+    
+word_list = ["abandoned",
+            "aberdeen",
              "abilities",
              "ability",
              "able",
