@@ -1,16 +1,7 @@
 # Step 5
 
 import random
-logo = """
- _                                             
-| |                                            
-| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
-| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
-| | | | (_| | | | | (_| | | | | | | (_| | | | |
-|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
-                    __/ |                      
-                   |___/                       
-"""
+
 # TODO - 1 : - Update the word list to use the 'word_list'from hangman_word.py
 # Delete this line:word_list = ["ardvark","baboon","camel"]
 chosen_word =random.choice(word_list)
@@ -29,7 +20,7 @@ display =[]
 for _ in range(word_length):
     display += "_"
 
-    
+
 word_list = ["abandoned",
             "aberdeen",
              "abilities",
