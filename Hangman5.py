@@ -1,5 +1,5 @@
 # Step 5
-from replit import clear #To clear the console after every run so that u can see the newest run
+
 import random
 
 # TODO - 1 : - Update the word list to use the 'word_list'from hangman_word.py
@@ -28,6 +28,8 @@ for _ in range(word_length):
 
 while not Game_Over :
     guess = input ("Guess a letter:").lower()
+
+    
 
     # TODO - 4 : - If the user has entered a letter they have already guessed,print the letter and let them know.
     if guess in display:
