@@ -14,8 +14,8 @@ Game_Over = False
 lives = 6
 
 # TODO - 3 : - import the logo from hangman- art.py and print it at the start of the game.
-from hngman_art import logo
-print
+from hangman_art import logo
+print(logo)
 
 # Testing code
 print(f"Psst,the solution is {chosen_word}") 
@@ -30,7 +30,8 @@ while not Game_Over :
     guess = input ("Guess a letter:").lower()
 
     # TODO - 4 : - If the user has entered a letter they have already guessed,print the letter and let them know.
-    print(f"You have already guessed{letter}")
+    if guess in display:
+        print(f"You have already guessed{letter}")
  # Check guessed letter
 
     for position in range(word_length):
