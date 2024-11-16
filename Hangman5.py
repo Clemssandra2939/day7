@@ -31,7 +31,7 @@ while not Game_Over :
 
     # TODO - 4 : - If the user has entered a letter they have already guessed,print the letter and let them know.
     if guess in display:
-        print(f"You have already guessed{letter}")
+        print(f"You have already guessed{guess}")
  # Check guessed letter
 
     for position in range(word_length):
@@ -43,7 +43,7 @@ while not Game_Over :
     # Check if user is wrong.
     if guess not in chosen_word:
         # TODO - 5 : - If the letter is not in the chosen_word,print out the letter and let them know it's not in the word
-         print (f"You guessed {letter},that's not in the word.You lose a life")
+         print (f"You guessed {guess},that's not in the word.You lose a life")
          lives -= 1
          if lives == 0:
                 Game_Over = True
