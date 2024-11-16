@@ -1,5 +1,5 @@
 # Step 5
-# Try modules and how to do import
+from replit import clear #To clear the console after every run so that u can see the newest run
 import random
 
 # TODO - 1 : - Update the word list to use the 'word_list'from hangman_word.py
