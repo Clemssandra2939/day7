@@ -1,7 +1,7 @@
 # Step 5
 # Try modules and how to do import
 import random
-print(hangman_art.logo)
+
 # TODO - 1 : - Update the word list to use the 'word_list'from hangman_word.py
 
 from hangman_words import word_list
